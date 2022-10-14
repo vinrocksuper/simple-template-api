@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Movie Search</title>
 </head>
+
 <body>
   <h1>Welcome to Movie Search!</h1>
+  <form action="/results" method="GET">
+    <label for="title">Title:</label>
+    <input name="title" type="text" />
 
+    <label for="year">Year:</label>
+    <input name="year" type="number" min="1900" max="2018"/>
+
+    <label for="starring">Starring:</label>
+    <input name="starring" type="text" />
+
+    <input type="submit" text="Find Movie"/>
+  </form>
   <a href="/getData">View Raw Data</a>
 </body>
+
 </html>
